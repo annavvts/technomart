@@ -1,0 +1,79 @@
+@import "variables.less";
+@import "mixins.less";
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+ul {
+   padding-left: 0;
+   margin: 0;
+   list-style: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.perforators {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: @blue;
+  background-color: #f2f6f8;
+  padding: 30px;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+hr {
+  outline: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 1px;
+  background-color: #c6c2bd;
+}
+
+@import "blocks/header.less";
+@import "blocks/catalog-preview.less";
+@import "blocks/popular-items.less";
+@import "blocks/popular-brands.less";
+@import "blocks/service.less";
+@import "blocks/company.less";
+@import "blocks/footer.less";
+@import "blocks/breadcrumbs.less";
+@import "blocks/parameters.less";
+@import "blocks/catalog.less";
+@import "blocks/items.less";
+@import "blocks/description.less";
+

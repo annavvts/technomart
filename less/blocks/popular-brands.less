@@ -1,0 +1,46 @@
+.popular-brands {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 85px;
+
+	h2 {
+		color: @blue;
+		font-size: 30px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&-header {
+		background-color: @beige;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 30px;
+		margin-bottom: 20px;
+		margin-top: 50px;
+	}
+
+	article {
+		width: 220px;
+		border: 1px solid #e5e5e5;
+		margin-right: 20px;
+		margin-top: 20px;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+
+    	&:hover {
+    		box-shadow: 0 10px 25px rgba(41,52,73,.5);
+    	}
+ 
+		&:nth-child(4n+4) {
+			margin-right: 0;
+		}
+	}
+
+	.btn {
+		.btn();
+	}
+}

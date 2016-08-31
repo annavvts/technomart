@@ -1,0 +1,153 @@
+.service {
+	background-color: #f2f6f8;
+	padding-top: 65px;
+	padding-bottom: 100px;
+	min-height: 593px;
+
+
+	.wrapper {
+		width: 940px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		font-size: 30px;
+		color: black;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-family: "PT Sans";
+		font-size: 13px;
+		line-height: 24px;
+		color: black;
+		max-width: 450px;
+	}
+
+	.btn {
+		.btn();
+	}
+
+	form {
+		width: 240px;
+	}
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	label {
+		color: white;
+		font-size: 21px;
+		line-height: 30px;
+		font-weight: 700;
+		background-color: @blue;
+		padding: 10px 20px;
+		display: block;
+		cursor: pointer;
+		width: 240px;
+	}
+
+	.main-descr {
+		margin-bottom: 78px;
+	}
+
+	.delivery {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 26px;
+			left: 190px;
+			background-image: url("../img/service-bg.png");
+			width: 468px;
+			height: 261px;
+		}
+		
+
+		p {
+			max-width: 280px;
+		}
+	}
+
+	.guaranty {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 26px;
+			left: 225px;
+			background-image: url("../img/garant-bg.png");
+			width: 389px;
+			height: 283px;
+		}
+		
+
+		p {
+			max-width: 385px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.credit {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 15px;
+			left: 190px;
+			background-image: url("../img/credit-bg.png");
+			width: 465px;
+			height: 265px;
+		}
+		
+
+		p {
+			max-width: 280px;
+		}
+	}
+
+	.service-slide {
+		display: none;
+
+		h4 {
+			color: @blue;
+			font-size: 36px;
+			text-transform: uppercase;
+			font-weight: 400;
+			margin-bottom: 37px;
+		}
+	}
+
+	.service-slides {
+		display: inline-block;
+	}
+
+	.service-slider-controls {
+		display: inline-block;
+		margin-right: 78px;
+	}
+
+	#delivery:checked~.service-slider-controls label[for=delivery], 
+	#guaranty:checked~.service-slider-controls label[for=guaranty], 
+	#credit:checked~.service-slider-controls label[for=credit] {
+		background-color: white;
+		color: @blue;
+	}
+
+	#delivery:checked~.service-slides .service-slide:nth-child(1) {
+	    display: block;
+	}
+
+	#guaranty:checked~.service-slides .service-slide:nth-child(2) {
+	    display: block;
+	}
+
+	#credit:checked~.service-slides .service-slide:nth-child(3) {
+	    display: block;
+	}
+
+}
